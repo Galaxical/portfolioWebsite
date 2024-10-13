@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg--color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color:  #ededed;
+    --main-color: #00abf0;
+}
+
+html {
+    font-size:62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg--color);
+    color: var(--text-color); 
+
+}
+
+.header{
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navBar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-inline-start: 3.5rem;
+    transition: .3s;
+}
+
+.navBar a:hover,
+.navBar a.active{
+    color: var(--main-color);
+}
+
+#menu-bar{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    min-block-size: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+
+.home-content{
+    max-inline-size: 60rem;
+}
+
+.home-content h1 {
+    font-size:5rem;
+    font-weight: 700;
+}
+
+.home-content .text-animate {
+    position: relative;
+    inline-size: 32.8rem;
+}
+
+.home-content .text-animate h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    inline-size: 34.5rem;
+    block-size: 5rem;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 15rem;
+    block-size: 100%;
+    background: var(--main-color);
+}
